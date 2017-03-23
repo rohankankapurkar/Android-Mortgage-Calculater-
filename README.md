@@ -11,4 +11,18 @@ If the valid address is entered . the address will be saved in the SQLite. On th
 After clicking the marker the marker pops out and asks the user to either edit the property details or to delete the property. On clicking the edit button application takes the user to the first fragment to edit the details of the property. On clicking the delete button the marker gets deleted from the SQLite and the hence from the map. 
 
 Screenhots:
+
 <img src="/extras/Screenshots/Screenshot_20170321-212510.png" width="200">
+<img src="/extras/Screenshots/Screenshot_20170321-233357.png" width="200">
+<img src="/extras/Screenshots/Screenshot_20170321-233859.png" width="200">
+<img src="/extras/Screenshots/Screenshot_20170321-233921.png" width="200">
+<img src="/extras/Screenshots/Screenshot_20170321-233926.png" width="200">
+<img src="/extras/Screenshots/Screenshot_20170321-233932.png" width="200">
+<img src="/extras/Screenshots/Screenshot_20170321-233936.png" width="200">
+<img src="/extras/Screenshots/Screenshot_20170321-234011.png" width="200">
+<img src="/extras/Screenshots/Screenshot_20170321-234113.png" width="200">
+<img src="/extras/Screenshots/Screenshot_20170321-234125.png" width="200">
+<img src="/extras/Screenshots/Screenshot_20170321-234227.png" width="200">
+
+
+
