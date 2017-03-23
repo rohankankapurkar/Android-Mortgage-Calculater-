@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calcView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    tools:context="com.lab2.lab2nav.calculatorFragment">
+
+
+    <TextView
+        android:id="@+id/aprLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APR (%)*"
+        android:layout_alignBaseline="@+id/aprValue"
+        android:layout_alignBottom="@+id/aprValue"
+        android:layout_alignStart="@+id/loanLabel" />
+
+    <TextView
+        android:id="@+id/loanLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/loanAmt"
+        android:layout_alignBottom="@+id/loanAmt"
+        android:layout_alignEnd="@+id/newC"
+        android:text="LOAN AMOUNT*" />
+
+
+    <EditText
+        android:id="@+id/aprValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/zipcode"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/loanAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/aprLabel"
+        android:layout_alignStart="@+id/aprValue" />
+
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_below="@+id/downPayment"
+        android:layout_alignEnd="@+id/save" />
+
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MONTHLY PAYMENT"
+        android:layout_alignBottom="@+id/result"
+        android:layout_alignStart="@+id/newC" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="number"
+        android:layout_above="@+id/save"
+        android:layout_toEndOf="@+id/resultLabel" />
+
+    <EditText
+        android:id="@+id/downPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/loanLabel"
+        android:layout_alignStart="@+id/loanAmt" />
+
+    <TextView
+        android:id="@+id/downPaymentLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/downPayment"
+        android:layout_alignBottom="@+id/downPayment"
+        android:layout_alignStart="@+id/loanLabel"
+        android:text="DOWN PAYMENT" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/calculate"
+        android:layout_toStartOf="@+id/downPayment">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:text="15 years" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/calculate"
+            android:layout_alignTop="@+id/radioGroup"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:text="30 years" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/newC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:text="New"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/propInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROPERTY DETAILS"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Street Address"
+        android:inputType="textPersonName"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/propInfo"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/address"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/zipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Zipcode"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/city"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/states"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/zipcode"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/zipcode" />
+
+    <TextView
+        android:id="@+id/calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/aprLabel"
+        android:layout_alignStart="@+id/aprLabel"
+        android:layout_marginBottom="21dp"
+        android:text=" " />
+
+    <Spinner
+        android:id="@+id/propertyType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/city"
+        android:layout_toEndOf="@+id/city" />
+
+
+</RelativeLayout>
