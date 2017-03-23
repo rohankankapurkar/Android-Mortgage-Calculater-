@@ -12,9 +12,7 @@ After clicking the marker the marker pops out and asks the user to either edit t
 
 Screenhots:
 
-<img src="/extras/Screenshots/Screenshot_20170321-212510.png" width="200">
-<img src="/extras/Screenshots/Screenshot_20170321-233357.png" width="200">
-<img src="/extras/Screenshots/Screenshot_20170321-233859.png" width="200">
+<img src="/extras/Screenshots/Screenshot_20170321-212510.png" width="200"> <img src="/extras/Screenshots/Screenshot_20170321-233357.png" width="200"> <img src="/extras/Screenshots/Screenshot_20170321-233859.png" width="200">
 <img src="/extras/Screenshots/Screenshot_20170321-233921.png" width="200">
 <img src="/extras/Screenshots/Screenshot_20170321-233926.png" width="200">
 <img src="/extras/Screenshots/Screenshot_20170321-233932.png" width="200">
